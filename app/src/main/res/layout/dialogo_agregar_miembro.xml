@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+   >
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:id="@+id/image_input"
+        android:gravity="center"
+        android:src="@drawable/loggin_chiquito"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:focusable="true" />
+    <View
+        android:id="@+id/divider"
+
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/image_input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/normal_padding"
+        android:layout_marginTop="@dimen/padding_between"/>
+
+
+    <EditText
+        android:id="@+id/nombre_etx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:background="@drawable/edit_text_border"
+        android:paddingBottom="@dimen/padding_between"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:padding="@dimen/edit_text_padding"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/a_pater_etx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="Apellido Paterno"
+        android:layout_below="@id/nombre_etx"
+        android:paddingBottom="@dimen/normal_padding"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:inputType="textPersonName"
+        android:padding="@dimen/edit_text_padding"
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        />
+    <EditText
+        android:id="@+id/a_mater_etx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+
+        android:layout_marginTop="@dimen/normal_padding"
+        android:layout_marginBottom="@dimen/normal_padding"
+        android:hint="Apellido Materno"
+        android:inputType="textPersonName"
+        android:padding="@dimen/edit_text_padding"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@id/a_pater_etx"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spn_grupos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a_mater_etx"
+        android:ems="10"
+        android:background="@drawable/edit_text_border"
+        android:entries="@array/grupos"
+        android:spinnerMode="dialog"
+        ></Spinner>
+
+    <Button
+        android:id="@+id/guardar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/card_margin"
+        android:paddingTop="@dimen/card_margin"
+        android:paddingLeft="@dimen/margin_divider"
+        android:paddingRight="@dimen/margin_divider"
+        android:layout_marginTop="@dimen/card_margin"
+        android:text="Guardar"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/spn_grupos"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

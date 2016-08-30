@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.isaic.orfeon10dejunio.api.integrantes.DetailActivity">
+    <item android:id="@+id/action_delete" android:title="Editar"
+        android:orderInCategory="2" app:showAsAction="ifRoom" android:icon="@mipmap/ic_delete"/>
+    <item android:id="@+id/action_edit" android:title="Editar"
+        android:orderInCategory="2" app:showAsAction="ifRoom" android:icon="@mipmap/ic_edit"/>
+</menu>

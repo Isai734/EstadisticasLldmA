@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/card_elevation">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="3dp"
+        android:id="@+id/cvw_pase_lista"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/grid_view_padding">
+
+            <TextView
+                android:id="@+id/fecha_l_txv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:paddingTop="@dimen/normal_padding"
+                android:text="03 de Marzo del 2016"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/normal_padding"
+                android:text="Fecha"
+                android:layout_below="@+id/fecha_l_txv"
+                android:layout_toEndOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/grupo_l_txv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2sp"
+                android:text="10:00 am"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView"
+                android:layout_toEndOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:layout_below="@+id/grupo_l_txv"
+                android:layout_alignStart="@+id/grupo_l_txv" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/normal_padding"
+                android:src="@drawable/cuenta" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_toLeftOf="@+id/textView"
+                android:layout_toStartOf="@+id/textView"
+                android:padding="@dimen/normal_padding"
+                android:src="@drawable/asistencias" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/total_asis_txv"
+                android:layout_below="@+id/textView"
+                android:layout_alignEnd="@+id/textView4"
+                android:layout_marginEnd="23dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asistencias"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/total_asis_txv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/grupos"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_toStartOf="@+id/textView4" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

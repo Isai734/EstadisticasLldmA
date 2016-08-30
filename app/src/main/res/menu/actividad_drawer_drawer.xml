@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grupo_uno"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_inicio"
+            android:checked="true"
+            android:icon="@drawable/inicio"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/item_reportes"
+            android:icon="@drawable/cuenta"
+            android:title="Reportes" />
+
+        <item
+            android:id="@+id/item_config"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configuracion" />
+    </group>
+    <!--
+    <group
+        android:id="@+id/grupo_uno"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_inicio"
+            android:checked="true"
+            android:icon="@drawable/inicio"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/item_cuenta"
+            android:icon="@drawable/cuenta"
+            android:title="Cuenta" />
+        <item
+            android:id="@+id/item_configuracion"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configuracion" />
+    </group>
+
+    <item android:title="Materias">
+        <menu>
+            <item
+                android:id="@+id/item_agregar"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="Nueva" />
+        </menu>
+    </item>-->
+</menu>

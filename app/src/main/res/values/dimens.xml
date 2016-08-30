@@ -1,0 +1,47 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dialog_body">24dp</dimen>
+    <dimen name="padding_between">20dp</dimen>
+    <dimen name="edit_text_padding">16dp</dimen>
+    <dimen name="normal_padding">8dp</dimen>
+    <dimen name="button_padding">24dp</dimen>
+
+
+    <dimen name="indicator_size">12dp</dimen>
+
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="margin_top_between_cards">16dp</dimen>
+    <dimen name="vertical_margin_between_detail_components">16dp</dimen>
+
+    <dimen name="margin_divider">32dp</dimen>
+    <dimen name="padding_top_form">16dp</dimen>
+    <dimen name="margin_right_form">12dp</dimen>
+
+
+    <dimen name="size_fab">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="badge_text_size">10sp</dimen>
+    <dimen name="perfil_image_size">68dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+
+    <dimen name="grid_item_text_size">11sp</dimen>
+    <dimen name="grid_view_padding">5dp</dimen>
+    <dimen name="grid_item_image_size">90dp</dimen>
+
+
+    <dimen name="expanded_toolbar_title_margin_start">64dp</dimen>
+
+    <dimen name="app_bar_height">256dp</dimen>
+
+
+    <dimen name="header_left_padding">16dp</dimen>
+    <dimen name="header_height">192dp</dimen>
+</resources>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvw_pase_lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        card_view:cardElevation="3dp"
+
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="6sp"
+            android:stretchColumns="2">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Mes:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:id="@+id/txv_mes"
+                    android:text="Enero"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginRight="32sp"
+                    android:padding="3dp"
+                    android:text="Oracion"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text=""
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="Promedio"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_span="6"
+                    android:background="@color/colorAccent"></FrameLayout>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:paddingLeft="8sp"
+                    android:text="Estudio Lunes"
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:text=""
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/txv_prom_est_lunes"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:paddingLeft="8sp"
+                    android:text="Estudio Martes"
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:text=""
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/txv_prom_est_miercoles"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:paddingLeft="8sp"
+                    android:text="Estudio Sabado"
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:text=""
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/txv_prom_est_sabado"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:paddingLeft="8sp"
+                    android:text="Dominical"
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:text=""
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/txv_prom_domi"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:paddingLeft="8sp"
+                    android:text="Servicio Domingo"
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:text=""
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/txv_prom_serv_domi"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:paddingLeft="8sp"
+                    android:text="Servicio Jueves"
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:text=""
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/txv_prom_serv_jueves"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingLeft="8sp"
+                    android:text="Oracion 04:30"
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:text=""
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/txv_prom_cinco"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_marginBottom="6sp"
+                    android:paddingLeft="8sp"
+                    android:text="Oracion 6 pm"
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:text=""
+                    android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/txv_prom_seis"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_span="6"
+                    android:background="@color/colorAccent"></FrameLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_marginBottom="6sp"
+                    android:padding="2sp"
+                    android:text="Total :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txv_asis_total"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+        </TableLayout>
+        <!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/grid_view_padding">
+
+            <TextView
+                android:id="@+id/fecha_l_txv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:paddingTop="@dimen/normal_padding"
+                android:text="03 de Marzo del 2016"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/normal_padding"
+                android:text="Fecha"
+                android:layout_below="@+id/fecha_l_txv"
+                android:layout_toEndOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/grupo_l_txv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2sp"
+                android:text="10:00 am"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView"
+                android:layout_toEndOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:layout_below="@+id/grupo_l_txv"
+                android:layout_alignStart="@+id/grupo_l_txv" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/normal_padding"
+                android:src="@drawable/cuenta" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_toLeftOf="@+id/textView"
+                android:layout_toStartOf="@+id/textView"
+                android:padding="@dimen/normal_padding"
+                android:src="@drawable/asistencias" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/total_asis_txv"
+                android:layout_below="@+id/textView"
+                android:layout_alignEnd="@+id/textView4"
+                android:layout_marginEnd="23dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asistencias"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/total_asis_txv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/grupos"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_toStartOf="@+id/textView4" />
+
+        </RelativeLayout>-->
+    </android.support.v7.widget.CardView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></GridLayout>
+
+</LinearLayout>
